@@ -1,0 +1,8 @@
+app.get("/", function (req, res) {
+  const locals = {
+    title: " My Notes",
+    description: "Free NodeJs Notes app",
+  };
+
+  res.render("index", locals);
+});

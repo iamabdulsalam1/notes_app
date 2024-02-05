@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+  >
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a
+        href="/"
+        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-primary link-body-emphasis text-decoration-none fw-bold fs-2"
+      >
+        Notes
+      </a>
+    </div>
+
+    <form
+      class="col col-md-auto flex-fill justify-content-center"
+      action="/dashboard/search"
+      role="search"
+      method="POST"
+    >
+      <input
+        type="search"
+        name="searchTerm"
+        class="form-control border-primary"
+        placeholder="Search..."
+        aria-lebel="Search"
+      />
+    </form>
+
+    <div class="col-md-3 text-end">
+      <a href="/logout" type="button" class="btn btn-outline-primary">Logout</a>
+    </div>
+  </header>
+</div>
